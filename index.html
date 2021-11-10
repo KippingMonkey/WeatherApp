@@ -15,9 +15,29 @@
     <title>WeatherApp</title>
 </head>
 <body>
+    <section class="api-information">
+        <p>Please note that in order for this app to work you need to supply your own
+           OpenWeather API-key. It is free and you can get yours 
+           <a target="_blank" href="https://home.openweathermap.org/users/sign_up">>here.</a>
+        </p>
+    </section>
     <h1>What´s the weather like over there?</h1>
-    <div><p></p></div>
-
+    <p>Search for a city in the searchbar below to see what the weather is like, over there.</p>
+    <form>
+        <input type="text" name="search" aria-label="search" placeholder="Which city?">
+        <button type="submit" id="searchbtn" aria-label="searchbutton">SEARCH</button>
+    </form>
+    <section class="ajax-section">
+        <div class="result-container">
+            <ul class="result-list"></ul>
+        </div>
+    </section>
+    <footer>
+<div class="footer-container">
+    <p>Made with the help of 
+    <a target="_blank" href="https://tutsplus.com/authors/george-martsoukos?_ga=2.140296756.6423945.1636545823-1904750270.1630486489" >George Martsoukos</a> demo by Jonas Andersson 2021</p>
+</div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
