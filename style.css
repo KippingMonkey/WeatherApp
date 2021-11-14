@@ -1,0 +1,73 @@
+/* IMPORTED FONTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;400;800&display=swap");
+
+/* RESET STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+:root {
+  --bg-main: #40ceee;
+  --bg-info: #e6cc65;
+  --btn-main: #2e6471;
+  --btn-hover: #25515c;
+  --text-light: #d5e9ee;
+  --text-med: #0d7c98;
+  --text-dark: #173239;
+  --accent-1: #fa7602;
+  --accent-2: #7603e9;
+
+  --ff-main: "M PLUS Rounded 1c", sans-serif;
+  --fw-thin: 100;
+  --ff-regular: 400;
+  --ff-bold: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  font: 1rem/1 "M PLUS Rounded 1c", sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  padding: 5%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* SECTION #1
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
