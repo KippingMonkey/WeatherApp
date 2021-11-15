@@ -20,26 +20,24 @@
            OpenWeather API-key. It is free and you can get yours 
            <a target="_blank" href="https://home.openweathermap.org/users/sign_up">here.</a>
         </p>
-        <form>
+        <form id="api-form">
             <label for="input-key">API-key:</label>
-            <input type="text" id="input-key" name="input-key">
+            <input  id="input-key" type="text"  name="input-key" placeholder="Enter you API-key here">
             <button id="submitbtn" type="submit">submit</button>
         </form>
     </section>
     <main>
         <h1>What´s the weather like over there?</h1>
         <p>Search for a city in the searchbar below to see what the weather is like, over there.</p>
-        <form>
-            <input type="text" name="search" aria-label="search" placeholder="Which city?" autofocus>
+        <form id="search-form">
+            <input id="input-city" type="text" name="search" aria-label="search" placeholder="Which city?" autofocus>
             <button type="submit" id="searchbtn" aria-label="searchbutton">SEARCH</button>
-            <span class="message"></span>
+            <br><span class="message"></span>
         </form>
     </main>
     <section class="ajax-section">
         <div class="result-container">
-            <ul class="result-list">
-                </li>
-            </ul>
+            <ul class="result-list"></ul>
         </div>
     </section>
     <footer>
