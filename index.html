@@ -21,14 +21,14 @@
            <a target="_blank" href="https://home.openweathermap.org/users/sign_up">here.</a>
         </p>
         <form id="api-form">
-            <label for="input-key">API-key:</label>
-            <input  id="input-key" type="text"  name="input-key" placeholder="Enter you API-key here">
-            <button id="submitbtn" type="submit">submit</button>
+            <label for="input-key"><strong>API-KEY:</strong></label>
+            <input  id="input-key" type="text"  name="input-key" placeholder="Enter your API-key here">
+            <button id="submitbtn" type="submit">SUBMIT</button>
         </form>
     </section>
     <main>
         <h1>What´s the weather like over there?</h1>
-        <p>Search for a city in the searchbar below to see what the weather is like, over there.</p>
+        <p>Search for a city below to see what the weather is like, over there.</p>
         <form id="search-form">
             <input id="input-city" type="text" name="search" aria-label="search" placeholder="Which city?" autofocus>
             <button type="submit" id="searchbtn" aria-label="searchbutton">SEARCH</button>
@@ -37,7 +37,18 @@
     </main>
     <section class="ajax-section">
         <div class="result-container">
-            <ul class="result-list"></ul>
+            <ul class="result-list">
+                <li>
+                    <div class="city-card">
+                        <h2><span>City</span><sup class="sup-city">SWE</sup></h2>
+                        <div class="city-temp">23<sup class="sup-celcius">°C</sup></div>
+                        <figure>
+                            <img class="city-icon" src="icons/02d.png" alt="weathericon">
+                            <figcaption>Weather description</figcaption>
+                        </figure>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
     <footer>
