@@ -8,17 +8,17 @@
 
 :root {
   --bg-main: #40ceee;
-  --bg-info: #e6cc65;
+  --bg-info: #ebeb8f;
   --btn-main: #2e6471;
   --btn-hover: #25515c;
   --text-light: #d5e9ee;
-  --text-med: #0d7c98;
+  --text-med: #0c6d85;
   --text-dark: #173239;
   --accent-1: #fa7602;
   --accent-2: #7603e9;
 
   --ff-main: "M PLUS Rounded 1c", sans-serif;
-  --fw-thin: 100;
+  --ff-thin: 100;
   --ff-regular: 400;
   --ff-bold: 800;
 }
@@ -31,7 +31,7 @@
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 button {
@@ -58,8 +58,7 @@ ul {
 body {
   font: 1rem/1 "M PLUS Rounded 1c", sans-serif;
   background-color: var(--bg-main);
-  color: var(--text-dark);
-  padding: 5%;
+  color: var(--text-med);
 }
 
 .container {
@@ -69,5 +68,87 @@ body {
   padding: 0 15px;
 }
 
-/* SECTION #1
+/* SECTION #1 - KEY
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.api-information {
+  margin: 0;
+  padding: 5%;
+  color: var(--text-dark);
+  font-size: 0.8rem;
+  line-height: 1.2;
+  background-color: var(--bg-info);
+}
+
+#api-form {
+  margin-top: 0.5rem;
+}
+
+#input-key,
+#input-city {
+  border-bottom: var(--text-dark) 1px solid;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: var(--ff-bold);
+}
+
+::-webkit-input-placeholder {
+  font-weight: var(--ff-thin);
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-weight: var(--ff-thin);
+  font-style: italic;
+}
+::-moz-placeholder {
+  font-weight: var(--ff-thin);
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  font-weight: var(--ff-thin);
+  font-style: italic;
+}
+
+#submitbtn,
+#searchbtn {
+  width: 100%;
+  background-color: var(--btn-main);
+  color: var(--text-light);
+  text-align: center;
+  padding: 0.3rem;
+  margin-top: 0.8rem;
+  border-radius: 1rem;
+}
+
+/* MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+main {
+  padding: 5%;
+}
+h1 {
+  margin: 0.8rem 0;
+  color: white;
+  text-shadow: 0.2rem 0.2rem var(--text-med);
+}
+
+/* SECTION #2 - AJAX
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.result-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  border: var(--text-med) 3px solid;
+  width: 12rem;
+  height: 15rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.sup-city {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
