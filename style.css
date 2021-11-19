@@ -61,12 +61,12 @@ body {
   color: var(--text-med);
 }
 
-.container {
+/* .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
+} */
 
 /* SECTION #1 - KEY
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -135,20 +135,55 @@ h1 {
 
 /* SECTION #2 - AJAX
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.result-container {
+.ajax-section {
   display: grid;
-  grid-template-columns: 1fr;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.result-card {
   background-color: white;
   border: var(--text-med) 3px solid;
   width: 12rem;
-  height: 15rem;
+  height: 14rem;
   margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
 }
 
 .sup-city {
-  font-size: 1rem;
-  padding: 0.5rem;
+  font-family: var(--ff-main);
+  font-weight: var(--ff-bold);
+  font-size: 0.6rem;
+  color: white;
+  padding: 0.2rem 0.3rem;
+  margin-left: 0.3rem;
+  background-color: var(--accent-1);
+  border: transparent;
+  border-radius: 0.4rem;
+}
+
+.city-temp {
+  margin-top: 0.6rem;
+}
+.result-card p {
+  margin-top: 1rem;
+}
+.result-card:hover {
+  scale: 120%;
+}
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-container > p,
+.footer-container > a {
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0.3rem;
 }
