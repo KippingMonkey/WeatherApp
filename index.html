@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,19 +11,20 @@
     <meta property="og:title" content="WeatherApp" />
     <meta property="og:description" content="Look up the weather in cities of your choice" />
     <meta property="og:image" content="" />
-    
-<link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
     <title>WeatherApp</title>
 </head>
+
 <body>
     <section class="api-information">
         <p>Please note that in order for this app to work you need to supply your own
-           OpenWeather API-key. It is free and you can get yours 
-           <a target="_blank" href="https://home.openweathermap.org/users/sign_up">here.</a>
+            OpenWeather API-key. It is free and you can get yours
+            <a target="_blank" href="https://home.openweathermap.org/users/sign_up">here.</a>
         </p>
         <form id="api-form">
             <label for="input-key"><strong>API-KEY:</strong></label>
-            <input  id="input-key" type="text"  name="input-key" placeholder="Enter your API-key here">
+            <input id="input-key" type="text" name="input-key" placeholder="Enter your API-key here">
             <button id="submitbtn" type="submit">SUBMIT</button>
         </form>
     </section>
@@ -36,31 +38,35 @@
         </form>
     </main>
     <section class="ajax-section">
-        <div class="result-container">
-            <ul class="result-list">
-                <li>
-                    <div class="city-card">
-                        <h2><span>City</span><sup class="sup-city">SWE</sup></h2>
-                        <div class="city-temp">23<sup class="sup-celcius">°C</sup></div>
-                        <figure>
-                            <img class="city-icon" src="icons/02d.png" alt="weathericon">
-                            <figcaption>Weather description</figcaption>
-                        </figure>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <ul class="results">
+            <li>
+                <div class="result-card">
+                    <h2><span>City</span><sup class="sup-city">SWE</sup></h2>
+                    <div class="city-temp">23<sup class="sup-celcius">°C</sup></div>
+                    <figure>
+                        <img class="city-icon" src="icons/02d.png" alt="weathericon">
+                        <figcaption>Weather description</figcaption>
+                        <p>Feels like 23 °C</p>
+                    </figure>
+                </div>
+            </li>
+        </ul>
     </section>
     <footer>
-<div class="footer-container">
-    <p>Made with the help of 
-    <a target="_blank" href="https://tutsplus.com/authors/george-martsoukos?_ga=2.140296756.6423945.1636545823-1904750270.1630486489" >George Martsoukos</a> weatherapp-demo.</p>
-    <p>By Jonas Andersson 2021</p>
-    <p>Free icons found at <a target="_blank" href="https://dribbble.com/shots/1895438-Free-weather-icons">Dribble</a> </p>
-</div>
+        <div class="footer-container">
+            <p>Made with the help of
+                <a target="_blank"
+                    href="https://tutsplus.com/authors/george-martsoukos?_ga=2.140296756.6423945.1636545823-1904750270.1630486489">George
+                    Martsoukos</a> weatherapp-demo.
+            </p>
+            <p>Free icons found at <a target="_blank"
+                    href="https://dribbble.com/shots/1895438-Free-weather-icons">Dribble</a> </p>
+            <p>By Jonas Andersson 2021</p>
+        </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
