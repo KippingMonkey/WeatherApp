@@ -82,18 +82,17 @@ async function getWeatherData() {
 
 async function displayCityWeatherCard(result) {
   let forecast = await result;
-  console.log(forecast);
-  const markup = `<li>
+  const markup = `<li class="grid-item">
                 <div class="result-card">
                     <h2><span>${city}</span><sup class="sup-city">${forecast.sys.country}</sup></h2>
-                    <div class="city-temp">${Math.round(forecast.main.temp)}<sup class="sup-celcius">°C</sup></div>
+                    <div class="city-temp">${forecast.main.temp}<sup class="sup-celcius">°C</sup></div>
                     <figure>
-                        <img class="city-icon" src="icons/${forecast.weather[0].icon}.png" alt="weathericon">
+                        <img class="city-icon" src="icons/02d.png" alt="weathericon">
                         <figcaption>${forecast.weather[0].description}</figcaption>
-                        <p>Feels like ${Math.round(forecast.main.feels_like)} °C</p>
+                        <p>Feels like ${forecast.main.feels_like}<sup class="sup-celcius">°C</sup></p>
                     </figure>
                 </div>
             </li>`;
 
-  $(".results").append(markup);
+  $(".grid-container").append(markup);
 }
