@@ -24,7 +24,6 @@
             <a target="_blank" href="https://home.openweathermap.org/users/sign_up">here.</a>
         </p>
         <form id="api-form">
-            <!-- <label for="input-key"><strong>API-KEY:</strong></label> -->
             <input id="input-key" type="text" name="input-key" placeholder="Enter your API-key here">
             <button id="submitbtn" type="submit">SUBMIT</button>
         </form>
@@ -33,13 +32,14 @@
         <h1>What´s the weather like over there?</h1>
         <p>Search for a city below to see what the weather is like, over there.</p>
         <form id="search-form">
-            <input id="input-city" type="text" name="search" aria-label="search" placeholder="Which city?" autofocus>
+            <input id="input-city" type="text" name="search" aria-label="search" placeholder="Which city?">
             <button type="submit" id="searchbtn" aria-label="searchbutton">SEARCH</button>
             <p class="message"></p>
         </form>
     </main>
     <section class="ajax-section">
         <ul class="grid-container results">
+           <!-- TEMPLATES USED FOR STYLING -->
             <!-- <li class="grid-item">
                 <div class="result-card">
                     <h2><span>City</span><sup class="sup-city">SWE</sup></h2>

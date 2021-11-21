@@ -14,8 +14,7 @@ clearOnRefresh();
 $("#api-form").submit((e) => {
   e.preventDefault();
   apiKey = $("#input-key").val();
-  $("#input-key").val("");
-  // alert(`apiKey = ${apiKey}`);
+  // $("#input-key").val(""); //clears input after submit
 });
 
 $("#search-form").submit((e) => {
@@ -25,8 +24,7 @@ $("#search-form").submit((e) => {
     $("#input-city").val("");
   } else {
     city = $("#input-city").val();
-    $("#input-city").val("");
-    // alert(`apiKey = ${apiKey} and city = ${city}`);
+    // $("#input-city").val("");//clears input after submit
     let duplicate = checkInputAgainstArray();
     if (duplicate){
 
