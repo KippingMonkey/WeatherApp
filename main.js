@@ -14,7 +14,7 @@ clearOnRefresh();
 $("#api-form").submit((e) => {
   e.preventDefault();
   apiKey = $("#input-key").val();
-  // $("#input-key").val("");
+  $("#input-key").val("");
   // alert(`apiKey = ${apiKey}`);
 });
 
@@ -27,9 +27,15 @@ $("#search-form").submit((e) => {
     city = $("#input-city").val();
     $("#input-city").val("");
     // alert(`apiKey = ${apiKey} and city = ${city}`);
-    checkInputAgainstArray();
-    let result = getWeatherData();
+    let duplicate = checkInputAgainstArray();
+    if (duplicate){
+
+    }
+    else{
+      let result = getWeatherData();
     displayCityWeatherCard(result);
+    }
+    
   }
 });
 
@@ -43,16 +49,20 @@ function clearOnRefresh() {
 }
 
 function checkInputAgainstArray() {
+  let duplicate;
   if (cities.length > 0) {
     if (cities.includes(city)) {
       $(".message").text(
-        "You already know what the weather is like there. You can also try to be more specifik in your search."
+        "You already know what the weather is like there."
       );
       $("#input-city").val("");
+      duplicate = true
     }
   } else {
     cities.push(city);
+    duplicate = false
   }
+  return duplicate;
 }
 
 async function getWeatherData() {

@@ -80,7 +80,8 @@ body {
   background-color: var(--bg-info);
 }
 
-#api-form {
+#api-form,
+#search-form {
   margin-top: 0.5rem;
 }
 
@@ -117,7 +118,8 @@ body {
   color: var(--text-light);
   text-align: center;
   padding: 0.3rem;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1  rem;
   border-radius: 1rem;
 }
 
@@ -132,20 +134,32 @@ h1 {
   color: white;
   text-shadow: 0.2rem 0.2rem var(--text-med);
 }
+.message{
+  margin-top:1rem;
+}
 
 /* SECTION #2 - AJAX
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .ajax-section {
-  display: grid;
-  justify-content: center;
   margin-bottom: 1rem;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item{
+  display: flex;
+  justify-content: center;
 }
 
 .result-card {
   background-color: white;
   border: var(--text-med) 3px solid;
-  width: 12rem;
-  height: 14rem;
+  width: 13rem;
+  height: 14.5rem;
   margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
@@ -173,6 +187,7 @@ h1 {
   scale: 120%;
 }
 
+
 /* FOOTER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .footer-container {
@@ -185,5 +200,74 @@ h1 {
   font-size: 0.6rem;
   text-align: center;
   line-height: 1.2;
-  margin: 0.3rem;
+  margin: 0.2rem;
+}
+
+/* MEDIAQUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width:450px) {
+  .grid-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width:750px) {
+  .grid-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .api-information,
+  main{
+    text-align: center;
+  }
+  #submitbtn,
+#searchbtn{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#input-key,
+#input-city{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+:-moz-placeholder {
+  text-align: center;
+}
+::-moz-placeholder {
+  text-align: center;
+}
+:-ms-input-placeholder {
+  text-align: center;
+}
+}
+@media (min-width:800px) {
+  h1{
+    font-size: 2.5rem;
+  }
+  #searchbtn,
+  #submitbtn,
+  .api-information,
+  main{
+    font-size: 1.2rem;
+  }
+  #input-key,
+#input-city{
+  font-size: 1.2rem;
+}
+.footer-container > p,
+.footer-container > a{
+  font-size: 1rem;
+}
+}
+
+
+@media (min-width:1000px) {
+  .grid-container{
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

@@ -19,11 +19,12 @@
 <body>
     <section class="api-information">
         <p>Please note that in order for this app to work you need to supply your own
-            OpenWeather API-key. It is free and you can get yours
+            OpenWeather API-key.</p>
+        <p> It is free and you can get yours
             <a target="_blank" href="https://home.openweathermap.org/users/sign_up">here.</a>
         </p>
         <form id="api-form">
-            <label for="input-key"><strong>API-KEY:</strong></label>
+            <!-- <label for="input-key"><strong>API-KEY:</strong></label> -->
             <input id="input-key" type="text" name="input-key" placeholder="Enter your API-key here">
             <button id="submitbtn" type="submit">SUBMIT</button>
         </form>
@@ -34,12 +35,12 @@
         <form id="search-form">
             <input id="input-city" type="text" name="search" aria-label="search" placeholder="Which city?" autofocus>
             <button type="submit" id="searchbtn" aria-label="searchbutton">SEARCH</button>
-            <br><span class="message"></span>
+            <p class="message"></p>
         </form>
     </main>
     <section class="ajax-section">
-        <ul class="results">
-            <li>
+        <ul class="grid-container results">
+            <!-- <li class="grid-item">
                 <div class="result-card">
                     <h2><span>City</span><sup class="sup-city">SWE</sup></h2>
                     <div class="city-temp">23<sup class="sup-celcius">°C</sup></div>
@@ -50,10 +51,44 @@
                     </figure>
                 </div>
             </li>
+            <li class="grid-item">
+                <div class="result-card">
+                    <h2><span>City</span><sup class="sup-city">SWE</sup></h2>
+                    <div class="city-temp">23<sup class="sup-celcius">°C</sup></div>
+                    <figure>
+                        <img class="city-icon" src="icons/02d.png" alt="weathericon">
+                        <figcaption>Weather description</figcaption>
+                        <p>Feels like 23 °C</p>
+                    </figure>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="result-card">
+                    <h2><span>City</span><sup class="sup-city">SWE</sup></h2>
+                    <div class="city-temp">23<sup class="sup-celcius">°C</sup></div>
+                    <figure>
+                        <img class="city-icon" src="icons/02d.png" alt="weathericon">
+                        <figcaption>Weather description</figcaption>
+                        <p>Feels like 23 °C</p>
+                    </figure>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="result-card">
+                    <h2><span>City</span><sup class="sup-city">SWE</sup></h2>
+                    <div class="city-temp">23<sup class="sup-celcius">°C</sup></div>
+                    <figure>
+                        <img class="city-icon" src="icons/02d.png" alt="weathericon">
+                        <figcaption>Weather description</figcaption>
+                        <p>Feels like 23 °C</p>
+                    </figure>
+                </div>
+            </li> -->
         </ul>
     </section>
     <footer>
         <div class="footer-container">
+            <p>By Jonas Andersson 2021</p>
             <p>Made with the help of
                 <a target="_blank"
                     href="https://tutsplus.com/authors/george-martsoukos?_ga=2.140296756.6423945.1636545823-1904750270.1630486489">George
@@ -61,7 +96,6 @@
             </p>
             <p>Free icons found at <a target="_blank"
                     href="https://dribbble.com/shots/1895438-Free-weather-icons">Dribble</a> </p>
-            <p>By Jonas Andersson 2021</p>
         </div>
     </footer>
 
