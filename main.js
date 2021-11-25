@@ -39,6 +39,10 @@ $("#search-form").submit((e) => {
 
 /* FUNCTIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+function cardClick(){
+  alert(`you clicked the city of ${city} you mofo!`)
+}
+
 function clearOnRefresh() {
   $("#input-key").val("");
   $("#input-city").val("");
@@ -94,5 +98,5 @@ async function displayCityWeatherCard(result) {
                 </div>
             </li>`;
 
-  $(".grid-container").append(markup);
+  $(".grid-container").append(markup)
 }
